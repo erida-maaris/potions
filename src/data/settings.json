@@ -1,0 +1,28 @@
+{
+  "app": {
+    "name": "Potion Maker",
+    "version": "1.0.0",
+    "description": "Create potions by mixing ingredients"
+  },
+  "brewing": {
+    "minAmount": 0,
+    "maxAmount": 100,
+    "defaultAmount": 50,
+    "mixingTime": 2000,
+    "maxIngredients": 5,
+    "errorThreshold": 0.2,
+    "errorPenalty": 0.1,
+    "optimalAmountRange": {
+      "min": 30,
+      "max": 70
+    }
+  },
+  "ingredients": {
+    "rarityBonus": {
+      "common": 1,
+      "uncommon": 1.5,
+      "rare": 2,
+      "legendary": 3
+    }
+  }
+}

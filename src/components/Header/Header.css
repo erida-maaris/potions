@@ -1,0 +1,31 @@
+.header {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.gold-display {
+  background-color: rgba(0, 0, 0, 0.8) !important;
+  border-radius: 20px !important;
+  border: 2px solid #ffd700 !important;
+  overflow: hidden;
+}
+
+.gold-display .k-card-body {
+  padding: 10px 20px !important;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+}
+
+.gold-icon {
+  font-size: 24px;
+}
+
+.gold-amount {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffd700;
+} 

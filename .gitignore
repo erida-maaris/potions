@@ -1,0 +1,21 @@
+# ide
+.idea
+.vscode
+
+# dependencies
+node_modules
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json*
+
+# project
+dist
+.env*
+!.env.example
+
+# misc
+.DS_Store
+
+# typescript
+*.tsbuildinfo

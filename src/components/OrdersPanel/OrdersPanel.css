@@ -1,0 +1,324 @@
+.orders-panel {
+  top: 20px;
+  left: 20px;
+  width: 320px;
+  background: linear-gradient(135deg, rgba(20, 20, 35, 0.95), rgba(40, 40, 60, 0.95));
+  border-radius: 15px;
+  padding: 20px;
+  color: white;
+  max-height: 85vh;
+  overflow-y: auto;
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.1),
+              0 0 40px rgba(255, 215, 0, 0.05);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 215, 0, 0.1);
+}
+
+.magic-star {
+  display: inline-block;
+  margin: 0 8px;
+  color: #ffd700;
+  animation: twinkle 1.5s infinite alternate;
+}
+
+@keyframes twinkle {
+  0% { opacity: 0.3; transform: scale(0.8); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+.orders-panel h2 {
+  margin: 0 0 20px 0;
+  text-align: center;
+  color: #ffd700;
+  font-size: 1.5em;
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+  letter-spacing: 1px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.orders-panel h2::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  height: 2px;
+  background: linear-gradient(90deg,
+    transparent,
+    rgba(255, 215, 0, 0.5),
+    rgba(255, 215, 0, 0.8),
+    rgba(255, 215, 0, 0.5),
+    transparent
+  );
+}
+
+.orders-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.order-card {
+  background: linear-gradient(135deg,
+    rgba(255, 255, 255, 0.05),
+    rgba(255, 255, 255, 0.1)
+  ) !important;
+  border: 1px solid rgba(255, 215, 0, 0.2) !important;
+  border-radius: 12px !important;
+  overflow: hidden;
+  transition: all 0.3s ease !important;
+  position: relative;
+}
+
+.order-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 50% 0%,
+    rgba(255, 215, 0, 0.1),
+    transparent 70%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.order-card:hover::before {
+  opacity: 1;
+}
+
+.order-card .k-card-body {
+  padding: 16px !important;
+}
+
+.order-card .k-card-title {
+  color: #ffd700 !important;
+  font-size: 1.3em !important;
+  margin-bottom: 12px !important;
+  text-shadow: 0 0 8px rgba(255, 215, 0, 0.3);
+}
+
+.order-card .k-card-subtitle {
+  color: #fff !important;
+  margin-bottom: 16px !important;
+  font-size: 1.1em !important;
+  opacity: 0.9;
+}
+
+.ingredients-section {
+  margin: 12px 0;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.ingredients-section p {
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 8px;
+  font-size: 0.95em;
+}
+
+.ingredients-list {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0;
+}
+
+.ingredients-list li {
+  margin: 5px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px 5px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.ingredient-name {
+  font-weight: 500;
+}
+
+.ingredient-amount {
+  font-size: 0.9em;
+  color: #aaa;
+  margin-left: 10px;
+}
+
+.ingredients-list li:hover {
+  transform: translateX(5px);
+}
+
+.ingredients-list li::before {
+  content: "✧";
+  color: #ffd700;
+  position: absolute;
+  left: 0;
+  font-size: 1.1em;
+  text-shadow: 0 0 5px rgba(255, 215, 0, 0.5);
+}
+
+.reward {
+  color: #ffd700;
+  font-weight: bold;
+  margin: 12px 0;
+  text-align: right;
+  font-size: 1.1em;
+  text-shadow: 0 0 8px rgba(255, 215, 0, 0.3);
+}
+
+.order-card .k-card-actions {
+  padding: 12px !important;
+  background: rgba(0, 0, 0, 0.2) !important;
+  border-top: 1px solid rgba(255, 215, 0, 0.1) !important;
+}
+
+.accept-order-btn {
+  width: 100% !important;
+  background: linear-gradient(135deg, #4CAF50, #45a049) !important;
+  border: none !important;
+  padding: 10px !important;
+  font-size: 1em !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1px !important;
+  transition: all 0.3s ease !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2) !important;
+}
+
+.accept-order-btn:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3) !important;
+}
+
+.accept-order-btn:active {
+  transform: translateY(0) !important;
+}
+
+.active-order {
+  position: relative;
+  transform: scale(1.02);
+  transition: transform 0.3s ease;
+}
+
+.active-order-badge {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background: linear-gradient(135deg, #4CAF50, #45a049);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 0.8em;
+  font-weight: bold;
+  z-index: 1;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  animation: pulse 2s infinite;
+}
+
+.accept-order-btn.active {
+  background: linear-gradient(135deg, #2196F3, #1976D2) !important;
+  cursor: default !important;
+}
+
+.accept-order-btn.disabled {
+  opacity: 0.5 !important;
+  cursor: not-allowed !important;
+  background: linear-gradient(135deg, #666, #444) !important;
+}
+
+.accept-order-btn.disabled:hover {
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+/* Стилізація скролбару */
+.orders-panel::-webkit-scrollbar {
+  width: 6px;
+}
+
+.orders-panel::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 3px;
+}
+
+.orders-panel::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg,
+    rgba(255, 215, 0, 0.3),
+    rgba(255, 215, 0, 0.5)
+  );
+  border-radius: 3px;
+  border: 1px solid rgba(255, 215, 0, 0.1);
+}
+
+.orders-panel::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg,
+    rgba(255, 215, 0, 0.4),
+    rgba(255, 215, 0, 0.6)
+  );
+}
+
+.card-glow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background: radial-gradient(circle at 50% 0%,
+    rgba(255, 215, 0, 0.15),
+    transparent 70%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.order-card:hover .card-glow {
+  opacity: 1;
+}
+
+.order-icon, .potion-icon, .ingredients-icon, .gold-icon, .btn-icon {
+  display: inline-block;
+  margin-right: 8px;
+  transform-origin: center;
+}
+
+.order-icon {
+  animation: float 3s infinite ease-in-out;
+}
+
+.potion-icon {
+  animation: shake 3s infinite ease-in-out;
+}
+
+.gold-icon {
+  animation: bounce 2s infinite ease-in-out;
+}
+
+.btn-icon {
+  animation: pulse 2s infinite ease-in-out;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-3px); }
+}
+
+@keyframes shake {
+  0%, 100% { transform: rotate(0); }
+  25% { transform: rotate(-5deg); }
+  75% { transform: rotate(5deg); }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-2px); }
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}

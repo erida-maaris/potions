@@ -1,0 +1,54 @@
+{
+  "potions": [
+    {
+      "name": "Health Potion",
+      "baseReward": 100,
+      "color": "#ff4444"
+    },
+    {
+      "name": "Strength Potion",
+      "baseReward": 150,
+      "color": "#7a19ff"
+    },
+    {
+      "name": "Agility Potion",
+      "baseReward": 120,
+      "color": "#00ff00"
+    },
+    {
+      "name": "Wisdom Potion",
+      "baseReward": 200,
+      "color": "#4444ff"
+    },
+    {
+      "name": "Invisibility Potion",
+      "baseReward": 250,
+      "color": "#cccccc"
+    },
+    {
+      "name": "Fire Breath Potion",
+      "baseReward": 180,
+      "color": "#ff8800"
+    },
+    {
+      "name": "Ice Shield Potion",
+      "baseReward": 160,
+      "color": "#00ffff"
+    },
+    {
+      "name": "Poison Potion",
+      "baseReward": 140,
+      "color": "#88ff00"
+    },
+    {
+      "name": "Regeneration Potion",
+      "baseReward": 190,
+      "color": "#ff00ff"
+    },
+    {
+      "name": "Luck Potion",
+      "baseReward": 300,
+      "color": "#ffff00"
+    }
+  ]
+} 
