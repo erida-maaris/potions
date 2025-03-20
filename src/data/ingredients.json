@@ -6,7 +6,7 @@
     "description": "Sparkling dust from unicorn horns that grants the potion magical glow and power.",
     "rarity": "legendary",
     "potencyFactor": 1.8,
-    "image": "/assets/unicorn-dust.png"
+    "image": "assets/unicorn-dust.png"
   },
   {
     "id": "dragon-scale",
@@ -15,7 +15,7 @@
     "description": "Sturdy dragon scales that add fiery strength and resilience to the potion.",
     "rarity": "legendary",
     "potencyFactor": 1.5,
-    "image": "/assets/dragon-scale.png"
+    "image": "assets/dragon-scale.png"
   },
   {
     "id": "fairy-wing",
@@ -24,7 +24,7 @@
     "description": "Delicate fairy wings that imbue the potion with agility and grace.",
     "rarity": "rare",
     "potencyFactor": 1.4,
-    "image": "/assets/fairy-wing.png"
+    "image": "assets/fairy-wing.png"
   },
   {
     "id": "mandrake-root",
@@ -33,7 +33,7 @@
     "description": "A mystical root enhancing the potion's overall magical effects.",
     "rarity": "rare",
     "potencyFactor": 1.4,
-    "image": "/assets/mandrake-root.png"
+    "image": "assets/mandrake-root.png"
   },
   {
     "id": "phoenix-feather",
@@ -42,7 +42,7 @@
     "description": "Phoenix feathers granting restorative and regenerative properties to the potion.",
     "rarity": "legendary",
     "potencyFactor": 1.9,
-    "image": "/assets/phoenix-feather.png"
+    "image": "assets/phoenix-feather.png"
   },
   {
     "id": "spider-venom",
@@ -51,7 +51,7 @@
     "description": "Venom from mystical spiders to add dangerous potency and stealth.",
     "rarity": "uncommon",
     "potencyFactor": 1.3,
-    "image": "/assets/spider-venom.png"
+    "image": "assets/spider-venom.png"
   },
   {
     "id": "mermaid-tear",
@@ -60,7 +60,7 @@
     "description": "Crystalline mermaid tears that bestow enchantments of healing and purity.",
     "rarity": "rare",
     "potencyFactor": 1.7,
-    "image": "/assets/mermaid-tear.png"
+    "image": "assets/mermaid-tear.png"
   },
   {
     "id": "bat-wing",
@@ -69,7 +69,7 @@
     "description": "Common bat wings used to stabilize and balance potion effects.",
     "rarity": "common",
     "potencyFactor": 0.9,
-    "image": "/assets/bat-wing.png"
+    "image": "assets/bat-wing.png"
   },
   {
     "id": "frog-eye",
@@ -78,7 +78,7 @@
     "description": "Common ingredient enhancing sight and perception properties.",
     "rarity": "common",
     "potencyFactor": 0.8,
-    "image": "/assets/frog-eye.png"
+    "image": "assets/frog-eye.png"
   },
   {
     "id": "crystal-essence",
@@ -87,7 +87,7 @@
     "description": "A rare magical crystal boosting the potion’s magical energy and potency.",
     "rarity": "rare",
     "potencyFactor": 1.6,
-    "image": "/assets/crystal-essence.png"
+    "image": "assets/crystal-essence.png"
   },
   {
     "id": "shadow-essence",
@@ -96,7 +96,7 @@
     "description": "A mysterious dark essence providing stealthy and shadow-like effects.",
     "rarity": "rare",
     "potencyFactor": 1.75,
-    "image": "/assets/shadow-essence.png"
+    "image": "assets/shadow-essence.png"
   },
   {
     "id": "golden-pollen",
@@ -105,7 +105,7 @@
     "description": "Pollen with healing properties that brings fortune and luck to the potion.",
     "rarity": "rare",
     "potencyFactor": 1.65,
-    "image": "/assets/golden-pollen.png"
+    "image": "assets/golden-pollen.png"
   },
   {
     "id": "frost-crystal",
@@ -114,7 +114,7 @@
     "description": "A crystal of eternal ice that imbues the potion with chilling and protective properties.",
     "rarity": "rare",
     "potencyFactor": 1.55,
-    "image": "/assets/frost-crystal.png"
+    "image": "assets/frost-crystal.png"
   },
   {
     "id": "mushroom-cap",
@@ -123,6 +123,6 @@
     "description": "Common ingredient serving as a neutral base for various potions.",
     "rarity": "common",
     "potencyFactor": 0.7,
-    "image": "/assets/mushroom-cap.png"
+    "image": "assets/mushroom-cap.png"
   }
 ]
